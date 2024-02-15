@@ -4,14 +4,14 @@
 	<style>
 	a {color:#bbccff}
 	</style>
-	<title>Анализатор радиусов перемещения, атаки, обзора и бомбардировки юнита</title>
+	<title>РђРЅР°Р»РёР·Р°С‚РѕСЂ СЂР°РґРёСѓСЃРѕРІ РїРµСЂРµРјРµС‰РµРЅРёСЏ, Р°С‚Р°РєРё, РѕР±Р·РѕСЂР° Рё Р±РѕРјР±Р°СЂРґРёСЂРѕРІРєРё СЋРЅРёС‚Р°</title>
 </head>
 
 <body>
 <div class='back'>
 <table>
 	<tr valign=top>
-		<td colspan=2 class='title'>Анализатор радиусов перемещения, атаки, обзора и бомбардировки юнита</td>
+		<td colspan=2 class='title'>РђРЅР°Р»РёР·Р°С‚РѕСЂ СЂР°РґРёСѓСЃРѕРІ РїРµСЂРµРјРµС‰РµРЅРёСЏ, Р°С‚Р°РєРё, РѕР±Р·РѕСЂР° Рё Р±РѕРјР±Р°СЂРґРёСЂРѕРІРєРё СЋРЅРёС‚Р°</td>
 	</tr>
 
 	<tr valign=top>
@@ -20,62 +20,62 @@
 		
 		<form action='' onSubmit='return formsubmit(this)'>
 			<table>
-				<tr><td colspan=2 class='cap'>Размеры таблицы</td></tr>
+				<tr><td colspan=2 class='cap'>Р Р°Р·РјРµСЂС‹ С‚Р°Р±Р»РёС†С‹</td></tr>
 				<tr>
-					<td>По горизонтали</td>
+					<td>РџРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё</td>
 					<td><input type='text' size=4 value='20' name='cols'></td>
 				</tr>
 				<tr>
-					<td>По вертикали</td>
+					<td>РџРѕ РІРµСЂС‚РёРєР°Р»Рё</td>
 					<td><input type='text' size=4 value='20' name='rows'></td>
 				</tr>
 
-				<tr><td colspan=2 class='cap'>Моделируемый юнит</td></tr>
+				<tr><td colspan=2 class='cap'>РњРѕРґРµР»РёСЂСѓРµРјС‹Р№ СЋРЅРёС‚</td></tr>
 				<tr>
-					<td>Параметр</td>
-					<td><select id='param'><option value='1'>Скорость<option value='2'>Радиус обзора<option value='3'>Радиус атаки<option value='4'>Радиус бомбардировки</select></td>
+					<td>РџР°СЂР°РјРµС‚СЂ</td>
+					<td><select id='param'><option value='1'>РЎРєРѕСЂРѕСЃС‚СЊ<option value='2'>Р Р°РґРёСѓСЃ РѕР±Р·РѕСЂР°<option value='3'>Р Р°РґРёСѓСЃ Р°С‚Р°РєРё<option value='4'>Р Р°РґРёСѓСЃ Р±РѕРјР±Р°СЂРґРёСЂРѕРІРєРё</select></td>
 				</tr>
 				<tr>
-					<td>Значение</td>
+					<td>Р—РЅР°С‡РµРЅРёРµ</td>
 					<td><input type='text' size=4 value='3' name='Dspeed'></td>
 				</tr>
 
 				<tr>
-					<td>Относительные координаты</td>
+					<td>РћС‚РЅРѕСЃРёС‚РµР»СЊРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹</td>
 					<td><input type='checkbox' name='coords'></td>
 				</tr>
 
-				<tr id='enemySettings1'><td colspan=2 class='cap'>Условный противник</td></tr>
+				<tr id='enemySettings1'><td colspan=2 class='cap'>РЈСЃР»РѕРІРЅС‹Р№ РїСЂРѕС‚РёРІРЅРёРє</td></tr>
 				<tr id='enemySettings2'>
-					<td>Радиус</td>
+					<td>Р Р°РґРёСѓСЃ</td>
 					<td><input type='text' size=4 value='3' name='Espeed'></td>
 				</tr>
 
 				<tr><td colspan=2>&nbsp;</td></tr>
 
-				<tr><td colspan=2 class='cap'><input type=submit value='Показать!' onSubmit='return formsubmit(this);'></td></tr>
+				<tr><td colspan=2 class='cap'><input type=submit value='РџРѕРєР°Р·Р°С‚СЊ!' onSubmit='return formsubmit(this);'></td></tr>
 
 				<tr><td colspan=2>&nbsp;</td></tr>
 
-				<tr><td colspan=2 class='cap'>Настройки карты</td></tr>
+				<tr><td colspan=2 class='cap'>РќР°СЃС‚СЂРѕР№РєРё РєР°СЂС‚С‹</td></tr>
 				<tr>
-					<td>Противник</td>
+					<td>РџСЂРѕС‚РёРІРЅРёРє</td>
 					<td><input type='checkbox' name='enemychkbox' onChange='enemyOnOff(this);'></td>
 				</tr>
 				<tr>
-					<td>Применить КОСТ</td>
+					<td>РџСЂРёРјРµРЅРёС‚СЊ РљРћРЎРў</td>
 					<td><input type='checkbox' name='zoneschkbox' checked></td>
 				</tr>
 
 				<tr><td colspan=2>&nbsp;</td></tr>
 
-				<tr><td colspan=2 class='cap'>Справка</td></tr>
+				<tr><td colspan=2 class='cap'>РЎРїСЂР°РІРєР°</td></tr>
 				<tr>
 					<td colspan=2>
-					Юнит по карте можно перемещать.<br>
-					Для этого нужно:<br>
-					1. Нажать на изображение юнита левой кнопкой мыши.<br>
-					2. Нажать левой кнопкой мыши на любом из помеченных пунктиром квадратов.<br>
+					Р®РЅРёС‚ РїРѕ РєР°СЂС‚Рµ РјРѕР¶РЅРѕ РїРµСЂРµРјРµС‰Р°С‚СЊ.<br>
+					Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ:<br>
+					1. РќР°Р¶Р°С‚СЊ РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ СЋРЅРёС‚Р° Р»РµРІРѕР№ РєРЅРѕРїРєРѕР№ РјС‹С€Рё.<br>
+					2. РќР°Р¶Р°С‚СЊ Р»РµРІРѕР№ РєРЅРѕРїРєРѕР№ РјС‹С€Рё РЅР° Р»СЋР±РѕРј РёР· РїРѕРјРµС‡РµРЅРЅС‹С… РїСѓРЅРєС‚РёСЂРѕРј РєРІР°РґСЂР°С‚РѕРІ.<br>
 					</td>
 				</tr>
 
@@ -83,11 +83,11 @@
 
 				<tr>
 					<td colspan=2>
-						Специально для участников игры <a href='http://conkings.com' target='_blank'>Короли созвездий</a> - бесплатной пошаговой стратегии о космических державах. 
+						РЎРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ СѓС‡Р°СЃС‚РЅРёРєРѕРІ РёРіСЂС‹ <a href='http://conkings.com' target='_blank'>РљРѕСЂРѕР»Рё СЃРѕР·РІРµР·РґРёР№</a> - Р±РµСЃРїР»Р°С‚РЅРѕР№ РїРѕС€Р°РіРѕРІРѕР№ СЃС‚СЂР°С‚РµРіРёРё Рѕ РєРѕСЃРјРёС‡РµСЃРєРёС… РґРµСЂР¶Р°РІР°С…. 
 					</td>
 				</tr>
 
-				<!--<tr><td colspan=2 class='cap'>Отладка</td></tr>
+				<!--<tr><td colspan=2 class='cap'>РћС‚Р»Р°РґРєР°</td></tr>
 				<tr>
 					<td colspan=2><input type='text' name='debug' value=''></td>
 				</tr>-->
@@ -96,7 +96,7 @@
 		
 		</td>
 	</tr>
-	<tr><td colspan=2><center>Текущая версия: 1.4. <a href='http://conkings.com/comm/ucp.php?i=pforums&mode=access&f=18&join=1' target='_blank'>Узнать больше</a><br>Анализатор совместим с FireFox v6.0 и выше.</center></td></tr>
+	<tr><td colspan=2><center>РўРµРєСѓС‰Р°СЏ РІРµСЂСЃРёСЏ: 1.4. <a href='http://conkings.com/comm/ucp.php?i=pforums&mode=access&f=18&join=1' target='_blank'>РЈР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ</a><br>РђРЅР°Р»РёР·Р°С‚РѕСЂ СЃРѕРІРјРµСЃС‚РёРј СЃ FireFox v6.0 Рё РІС‹С€Рµ.</center></td></tr>
 </table>
 </div>
 </body>
