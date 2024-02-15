@@ -1,0 +1,9 @@
+#flymap {border:1px solid #ffffff; color:#ffffff;}
+.back{ background-image:url(./img/star_back4v.jpg);}
+body {background-color:#000000; color:#ffffff; font-family:arial; font-size:12px;}
+td {width:32px; font-family:arial; font-size:10px; text-align:center;}
+tr {height:32px; color:#ffffff;}
+.form table {width:300px}
+.form td{width:200px; font-family:arial; font-size:12px; text-align:left}
+.cap {color:#ff8888; font-weight:700; font-size: 12px}
+.title { font-family:arial; font-size:14px; color:#eeeeff; font-weight:700;}

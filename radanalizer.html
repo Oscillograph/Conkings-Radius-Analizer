@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link rel='Stylesheet' type='text/css' href='./source/flymap.css'>
+	<style>
+	a {color:#bbccff}
+	</style>
+	<title>Анализатор радиусов перемещения, атаки, обзора и бомбардировки юнита</title>
+</head>
+
+<body>
+<div class='back'>
+<table>
+	<tr valign=top>
+		<td colspan=2 class='title'>Анализатор радиусов перемещения, атаки, обзора и бомбардировки юнита</td>
+	</tr>
+
+	<tr valign=top>
+		<td><table id='flymap'></table></td>
+		<td class='form'>
+		
+		<form action='' onSubmit='return formsubmit(this)'>
+			<table>
+				<tr><td colspan=2 class='cap'>Размеры таблицы</td></tr>
+				<tr>
+					<td>По горизонтали</td>
+					<td><input type='text' size=4 value='20' name='cols'></td>
+				</tr>
+				<tr>
+					<td>По вертикали</td>
+					<td><input type='text' size=4 value='20' name='rows'></td>
+				</tr>
+
+				<tr><td colspan=2 class='cap'>Моделируемый юнит</td></tr>
+				<tr>
+					<td>Параметр</td>
+					<td><select id='param'><option value='1'>Скорость<option value='2'>Радиус обзора<option value='3'>Радиус атаки<option value='4'>Радиус бомбардировки</select></td>
+				</tr>
+				<tr>
+					<td>Значение</td>
+					<td><input type='text' size=4 value='3' name='Dspeed'></td>
+				</tr>
+
+				<tr>
+					<td>Относительные координаты</td>
+					<td><input type='checkbox' name='coords'></td>
+				</tr>
+
+				<tr id='enemySettings1'><td colspan=2 class='cap'>Условный противник</td></tr>
+				<tr id='enemySettings2'>
+					<td>Радиус</td>
+					<td><input type='text' size=4 value='3' name='Espeed'></td>
+				</tr>
+
+				<tr><td colspan=2>&nbsp;</td></tr>
+
+				<tr><td colspan=2 class='cap'><input type=submit value='Показать!' onSubmit='return formsubmit(this);'></td></tr>
+
+				<tr><td colspan=2>&nbsp;</td></tr>
+
+				<tr><td colspan=2 class='cap'>Настройки карты</td></tr>
+				<tr>
+					<td>Противник</td>
+					<td><input type='checkbox' name='enemychkbox' onChange='enemyOnOff(this);'></td>
+				</tr>
+				<tr>
+					<td>Применить КОСТ</td>
+					<td><input type='checkbox' name='zoneschkbox' checked></td>
+				</tr>
+
+				<tr><td colspan=2>&nbsp;</td></tr>
+
+				<tr><td colspan=2 class='cap'>Справка</td></tr>
+				<tr>
+					<td colspan=2>
+					Юнит по карте можно перемещать.<br>
+					Для этого нужно:<br>
+					1. Нажать на изображение юнита левой кнопкой мыши.<br>
+					2. Нажать левой кнопкой мыши на любом из помеченных пунктиром квадратов.<br>
+					</td>
+				</tr>
+
+				<tr><td colspan=2>&nbsp;</td></tr>
+
+				<tr>
+					<td colspan=2>
+						Специально для участников игры <a href='http://conkings.com' target='_blank'>Короли созвездий</a> - бесплатной пошаговой стратегии о космических державах. 
+					</td>
+				</tr>
+
+				<!--<tr><td colspan=2 class='cap'>Отладка</td></tr>
+				<tr>
+					<td colspan=2><input type='text' name='debug' value=''></td>
+				</tr>-->
+			</table>
+		</form>
+		
+		</td>
+	</tr>
+	<tr><td colspan=2><center>Текущая версия: 1.4. <a href='http://conkings.com/comm/ucp.php?i=pforums&mode=access&f=18&join=1' target='_blank'>Узнать больше</a><br>Анализатор совместим с FireFox v6.0 и выше.</center></td></tr>
+</table>
+</div>
+</body>
+
+
+</html>
+
+<script type='text/javascript' src='./source/js/common.js'></script>
+<script type='text/javascript' src='./source/js/KOST.js'></script>
+<script type='text/javascript' src='./source/js/dragndrop.js'></script>
+<script type='text/javascript' src='./source/js/flymap.js'></script>
